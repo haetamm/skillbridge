@@ -1,0 +1,93 @@
+@import 'tailwindcss';
+
+
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+  
+.no-scrollbar {
+    -ms-overflow-style: none;  
+    scrollbar-width: none; 
+}
+
+:root {
+    --orange-50: #FF9500;
+    --orange-70: #FFBF66;
+    --orange-75: #FFCA80;
+    --orange-80: #FFD599;
+    --primary-90: #FFEACC;
+    --primary-95: #FFF4E5;
+    --primary-97: #FFF9F0;
+    --primary-99: #FFF9F0;
+    --grey-15: #262626;
+    --grey-30: #4C4C4D;
+    --grey-35: #59595A;
+    --grey-40: #656567;
+    --background-color-90: #E4E4E7;
+    --background-color-95: #F1F1F3;
+    --background-color-97: #F7F7F8;
+    --background-color-99: #FCFCFD;
+}
+
+[data-theme='dark'] {
+    --background-color-90: #1A1A1A;
+    --background-color-95: #262626;
+    --background-color-97: #333333;
+    --background-color-99: #4C4C4D;
+}
+
+@theme {
+    --breakpoint-xxs: 390px;
+    --breakpoint-xs: 500px;
+    --breakpoint-lp: 1440px;
+    --breakpoint-dk: 1920px;
+    --color-primary-50: var(--orange-50);
+    --color-primary-70: var(--orange-70);
+    --color-primary-75: var(--orange-75);
+    --color-primary-80: var(--orange-80);
+    --color-primary-90: var(--primary-90);
+    --color-primary-95: var(--primary-95);
+    --color-primary-97: var(--primary-97);
+    --color-primary-99: var(--primary-99);
+    --color-white-90: var(--background-color-90);
+    --color-white-95: var(--background-color-95);
+    --color-white-97: var(--background-color-97);
+    --color-white-99: var(--background-color-99);
+    --font-color-primary-50: var(--orange-50);
+    --font-color-grey-15: var(--grey-15);
+    --font-color-grey-35: var(--grey-35);
+    --font-color-grey-30: var(--grey-30);
+    --font-color-grey-40: var(--grey-40);
+    --border-color-white-90: (var(--background-color-90));
+    --border-color-white-95: (var(--background-color-95));
+}
+
+body {
+    font-family: "Be Vietnam Pro";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    background-color: var(--background-color-90);
+}
+
+.kontener {
+    width: 100%;
+}
+
+@media (min-width: 1280px) {
+    .kontener {
+        max-width: 1120px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .kontener {
+        max-width: 1280px;
+    }
+}
+
+@media (min-width: 1920px) {
+    .kontener {
+        max-width: 1595px;
+    }
+}

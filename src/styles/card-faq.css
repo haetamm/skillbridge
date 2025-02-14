@@ -1,0 +1,40 @@
+.p-card-faq {
+    padding: 24px;
+}
+
+@media (min-width: 1024px) {
+    .gap-card-faq {
+        gap: 20px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .p-card-faq {
+        padding: 50px;
+    }
+
+    .gap-card-faq {
+        gap: 30px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .p-card-faq {
+        padding: 80px;
+    }
+
+    .gap-card-faq {
+        gap: 80px;
+    }
+}
+
+@media (min-width: 1920px) {
+    .p-card-faq {
+        padding: 100px;
+    }
+
+    .gap-card-faq {
+        gap: 120px;
+    }
+
+}

@@ -14,7 +14,7 @@ const InputForm = ({ label, type, placeholder }) => {
         id={placeholder}
         type={type}
         placeholder={placeholder}
-        className="w-full h-[60px] p-5 border-[1px] border-white-95 bg-white-99 focus:bg-white  rounded-md focus:ring-2 focus:ring-primary-50 placeholder:text-[14px] placeholder:leading-5 lg:placeholder:text-[16px] dk:py-6 dk:px-5 dk:placeholder:text-lg"
+        className="block w-full h-[60px] p-5 border-[1px] border-white-95 bg-white-99 focus:bg-white  rounded-md focus:ring-2 focus:ring-primary-50 placeholder:text-[14px] placeholder:leading-5 lg:placeholder:text-[16px] dk:py-6 dk:px-5 dk:placeholder:text-lg"
         required
       />
     </div>

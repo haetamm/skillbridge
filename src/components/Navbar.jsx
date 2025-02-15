@@ -65,9 +65,18 @@ const Navbar = () => {
             >
               Sign Up
             </Link>
-            <button className=" cursor-pointer bg-primary-50 py-3 px-5 rounded-md text-white">
-              Login
-            </button>
+            <Link
+              onClick={() => {
+                closeSidebar();
+                scrollTop();
+              }}
+              to={urlPage.SIGNIN}
+              className="cursor-pointer"
+            >
+              <button className=" cursor-pointer bg-primary-50 py-3 px-5 rounded-md text-white">
+                Login
+              </button>
+            </Link>
             <button
               className="md:hidden"
               onClick={() => {

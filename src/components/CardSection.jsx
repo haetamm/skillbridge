@@ -7,7 +7,7 @@ const SectionCard = ({ id, title, description, children }) => {
     <>
       <section
         id={id}
-        className="mt-12.5 kontener mx-auto space-y-10 lp:space-y-[60px] dk:space-y-20"
+        className="mt-12.5 kontener mx-auto space-y-10 lp:space-y-[60px] dk:space-y-20 mb-0 xl:mb-[50px]"
       >
         <div>
           <p className="font-semibold text-[28px] leading-10.5 lg:text-[30px] lg:leading-[57px] lp:text-[38px] lp:leading-[57px] dk:text-5xl dk:leading-[72px]">

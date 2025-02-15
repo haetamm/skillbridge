@@ -14,13 +14,13 @@
 
 @media (min-width: 1440px) {
     .guest-container {
-        grid-template-columns: 665px 540px;
+        grid-template-columns: 660px 540px;
     }
 
 }
 
 @media (min-width: 1920px) {
     .guest-container {
-        grid-template-columns: 829px 660px;
+        grid-template-columns: 855px 660px;
     }
 }

@@ -7,7 +7,7 @@ import { dataAchivments, dataGoals } from "../utils/data";
 const AboutPage = () => {
   return (
     <>
-      <div className="flex-grow pt-[204px] xs:pt-[170px] md:pt-[202px] px-4 ">
+      <div className="flex-grow pt-[204px] xs:pt-[170px] md:pt-[202px] px-4">
         <DescriptionCard
           title="About Skillbridge"
           classList="md:items-center"

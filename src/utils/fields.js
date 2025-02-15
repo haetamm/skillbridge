@@ -1,32 +1,63 @@
 export const contactFields = [
   {
     label: "First Name",
-    placholder: "Enter First Name",
+    placeholder: "Enter First Name",
     type: "text",
   },
   {
     label: "Last Name",
-    placholder: "Enter Last Name",
+    placeholder: "Enter Last Name",
     type: "text",
   },
   {
     label: "Email",
-    placholder: "Enter your Email",
+    placeholder: "Enter your Email",
     type: "email",
   },
   {
     label: "Phone",
-    placholder: "Enter Phone Number",
+    placeholder: "Enter Phone Number",
     type: "number",
   },
   {
     label: "Subject",
-    placholder: "Enter your Subject",
+    placeholder: "Enter your Subject",
     type: "text",
   },
   {
     label: "Message",
-    placholder: "Enter your Message here...",
+    placeholder: "Enter your Message here...",
     type: "textarea",
+  },
+];
+
+export const registerFields = [
+  {
+    label: "Full Name",
+    placeholder: "Enter your Name",
+    type: "text",
+  },
+  {
+    label: "Email",
+    placeholder: "Enter your Email",
+    type: "email",
+  },
+  {
+    label: "Password",
+    placeholder: "Enter your Password",
+    type: "password",
+  },
+];
+
+export const loginFields = [
+  {
+    label: "Email",
+    placeholder: "Enter your Email",
+    type: "email",
+  },
+  {
+    label: "Password",
+    placeholder: "Enter your Password",
+    type: "password",
   },
 ];

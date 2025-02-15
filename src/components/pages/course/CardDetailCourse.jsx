@@ -14,7 +14,7 @@ const CardDetailCourse = () => {
         ) => (
           <div
             key={index}
-            className="mx-auto kontener my-10 bg-white rounded-lg"
+            className="mx-auto kontener my-10 bg-white rounded-lg mb-0"
           >
             <div className="w-full p-6 xl:p-10 lp:p-10 lp:gap-10 dk:p-12.5">
               <div className=" md:flex md:justify-between items-center space-y-3 md:space-y-0 gap-12.5 md:items-center ">

@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 const CardCurriculumDetail = ({ curricullums }) => {
   return (
     <>
-      <div className="kontener space-y-5 mt-12.5 mx-auto xl:space-y-0 xl:grid xl:grid-cols-2 xl:gap-7.5 lp:gap-5 dk:gap-10">
+      <div className="kontener space-y-5 mt-12.5 mx-auto xl:space-y-0 xl:grid xl:grid-cols-2 xl:gap-7.5 lp:gap-5 dk:gap-10 mb-0">
         {curricullums.map(({ id, title, details }, index) => (
           <div
             key={index}

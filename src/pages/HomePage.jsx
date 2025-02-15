@@ -43,7 +43,7 @@ const HomePage = () => {
 
   return (
     <>
-      <main className="px-4 flex-grow pt-[202px] xs:pt-[145px] md:pt-[202px]">
+      <main className="px-4 flex-grow pt-[202px] xs:pt-[145px] md:pt-[202px] mb-0 xl:mb-[50px]">
         <Hero />
 
         <Sponsor />

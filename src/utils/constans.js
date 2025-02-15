@@ -5,4 +5,5 @@ export const urlPage = {
   PRICE: "/price",
   CONTACT: "/contact",
   SIGNUP: "/signup",
+  SIGNIN: "/signin",
 };

@@ -7,7 +7,7 @@ import "../styles/contact-page.css";
 const ContactPage = () => {
   return (
     <>
-      <div className="flex-grow pt-[204px] xs:pt-[170px] md:pt-[202px] px-4 ">
+      <div className="flex-grow pt-[204px] xs:pt-[170px] md:pt-[202px] px-4 mb-0 xl:mb-[50px]">
         <DescriptionCard
           title="Contact Us"
           classList="md:items-center"

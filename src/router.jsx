@@ -8,6 +8,7 @@ import AboutPage from "./pages/AboutPage";
 import PricePage from "./pages/PricePage";
 import ContactPage from "./pages/ContactPage";
 import RegisterPage from "./pages/RegisterPage";
+import LoginPage from "./pages/LoginPage.jsx";
 
 const routerConfig = [
   {
@@ -45,6 +46,10 @@ const routerConfig = [
       {
         path: urlPage.SIGNUP,
         element: <RegisterPage />,
+      },
+      {
+        path: urlPage.SIGNIN,
+        element: <LoginPage />,
       },
     ],
   },

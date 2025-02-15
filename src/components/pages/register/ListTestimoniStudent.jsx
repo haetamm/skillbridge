@@ -10,11 +10,11 @@ const ListTestimoniStudent = () => {
 
   return (
     <>
-      <div className="space-y-1">
-        <p className="font-medium text-[28px] leading-10.5">
+      <div className="space-y-1 dk:space-y-1.5">
+        <p className="font-medium text-[28px] leading-10.5 dk:text-[38px] dk:leading-[57px]">
           Students Testimonials
         </p>
-        <p className="text-grey-35 lg:text-[16px] lg:leading-6 dk:text-lg dk:leading-[27px]">
+        <p className="text-grey-35 lp:text-[16px] dk:leading-lg dk:leading-[27px]">
           Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget
           elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget
           habitasse in velit fringilla feugiat senectus in.
@@ -31,7 +31,7 @@ const ListTestimoniStudent = () => {
             </div>
           ))}
         </div>
-        <div className="w-full flex justify-center gap-2.5 items-center mt-5 xs:justify-end">
+        <div className="w-full flex justify-center gap-2.5 items-center mt-5 xs:justify-end dk:mt-7.5">
           <button
             onClick={handlePrev}
             disabled={isSliding}

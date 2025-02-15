@@ -5,7 +5,7 @@ import CardDetailCourse from "../components/pages/course/CardDetailCourse";
 const CoursePage = () => {
   return (
     <>
-      <div className="flex-grow pt-[204px] xs:pt-[170px] md:pt-[202px] px-4 ">
+      <div className="flex-grow pt-[204px] xs:pt-[170px] md:pt-[202px] px-4 mb-0 xl:mb-[50px]">
         <DescriptionCard
           title="Online Courses on Design and Development"
           classList="md:items-start"

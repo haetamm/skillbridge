@@ -6,9 +6,9 @@ import Divider from "../components/pages/register/Divider";
 import ButtonGoogle from "../components/pages/register/ButtonGoogle";
 import { urlPage } from "../utils/constans";
 import { Link } from "react-router-dom";
-import HeaderPage from "../components/pages/register/HeaderPage";
 import { scrollTop } from "../utils/helper";
 import FormCustom from "../components/pages/register/FormCustom";
+import HeaderForm from "../components/pages/register/HeaderForm";
 
 const LoginPage = () => {
   return (
@@ -21,7 +21,7 @@ const LoginPage = () => {
             </div>
             <div className="w-full order-1 lg:order-2 ">
               <div className="w-full flex flex-col items-center justify-center bg-white rounded-[10px] p-7.5 space-y-7.5 lp:space-y-10 lp:p-10 dk:p-12.5 dk:space-y-12.5">
-                <HeaderPage
+                <HeaderForm
                   name="Login"
                   desc="Welcome back! Please log in to access your account."
                 />
@@ -31,7 +31,7 @@ const LoginPage = () => {
                   <Divider />
                   <ButtonGoogle />
 
-                  <p className=" text-center text-gray-600 lp:text-[16px] lp:leading-6 dk:text-lg dk:leading-[27px]">
+                  <p className=" text-center text-gray-600 text-body">
                     Don’t have an account?{" "}
                     <Link onClick={scrollTop} to={urlPage.SIGNUP}>
                       Sign Up

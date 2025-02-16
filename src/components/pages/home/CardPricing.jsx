@@ -51,7 +51,7 @@ const CardPricing = () => {
                               <IoCloseOutline className="w-4 h-4" />
                             )}
                           </div>
-                          <p className="text-grey-30 dk:text-[18px] leading-[27px]">
+                          <p className="text-grey-30 dk:text-lg dk:leading-[27px]">
                             {feature}
                           </p>
                         </li>

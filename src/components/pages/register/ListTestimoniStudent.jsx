@@ -11,10 +11,10 @@ const ListTestimoniStudent = () => {
   return (
     <>
       <div className="space-y-1 dk:space-y-1.5">
-        <p className="font-medium text-[28px] leading-10.5 dk:text-[38px] dk:leading-[57px]">
+        <p className="font-medium text-[28px] leading-10.5 lp:text-3xl lp:leading-[45px] dk:text-[38px] dk:leading-[57px]">
           Students Testimonials
         </p>
-        <p className="text-grey-35 lp:text-[16px] dk:leading-lg dk:leading-[27px]">
+        <p className="text-grey-35 text-body">
           Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget
           elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget
           habitasse in velit fringilla feugiat senectus in.

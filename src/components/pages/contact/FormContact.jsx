@@ -45,9 +45,7 @@ const FormContact = () => {
         </div>
 
         <div className="space-y-3 lp:space-y-4 ">
-          <p className="font-medium lg:text-[16px] lg:leading-6 lp:text-lg lp:leading-[27px]">
-            Message
-          </p>
+          <p className="font-medium text-body">Message</p>
           <textarea
             placeholder="Enter your Message here..."
             rows="4"

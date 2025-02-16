@@ -7,9 +7,9 @@ import ButtonGoogle from "../components/pages/register/ButtonGoogle";
 import { Link } from "react-router-dom";
 import { urlPage } from "../utils/constans";
 import { registerFields } from "../utils/fields";
-import HeaderPage from "../components/pages/register/HeaderPage";
 import { scrollTop } from "../utils/helper";
 import FormCustom from "../components/pages/register/FormCustom";
+import HeaderForm from "../components/pages/register/HeaderForm";
 
 const RegisterPage = () => {
   return (
@@ -22,7 +22,7 @@ const RegisterPage = () => {
             </div>
             <div className="w-full order-1 lg:order-2 ">
               <div className="w-full flex flex-col items-center justify-center bg-white rounded-[10px] p-7.5 space-y-7.5 lp:space-y-10 lp:p-10 dk:p-12.5 dk:space-y-12.5">
-                <HeaderPage
+                <HeaderForm
                   name="Sign Up"
                   desc="Create an account to unlock exclusive features."
                 />
@@ -32,7 +32,7 @@ const RegisterPage = () => {
                   <Divider />
                   <ButtonGoogle />
 
-                  <p className=" text-center text-gray-600 lp:text-[16px] lp:leading-6 dk:text-lg dk:leading-[27px]">
+                  <p className=" text-center text-gray-600 text-body">
                     Already have an account?{" "}
                     <Link onClick={scrollTop} to={urlPage.SIGNIN}>
                       Login

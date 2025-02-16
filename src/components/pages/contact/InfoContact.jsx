@@ -13,9 +13,7 @@ const InfoContact = () => {
             <div className=" bg-white-97 items-center flex rounded-md w-11 h-11 p-3 dk:w-[52px] dk:h-[52px]">
               {icon}
             </div>
-            <p className="text-grey-30 lg:text-[16px] lg:leading-6 dk:text-lg dk:leading-[27px]">
-              {label}
-            </p>
+            <p className="text-grey-30 text-body">{label}</p>
           </div>
         ))}
         <div className="flex flex-col items-center rounded-md bg-white-95 p-7.5 space-y-3.5 dk:space-y-5 dk:rounded-lg ">
@@ -29,9 +27,7 @@ const InfoContact = () => {
               </div>
             ))}
           </div>
-          <p className="text-grey-30 lg:text-[16px] lg:leading-6 dk:text-lg dk:leading-[27px]">
-            Social Profiles
-          </p>
+          <p className="text-grey-30 text-body">Social Profiles</p>
         </div>
       </div>
     </>

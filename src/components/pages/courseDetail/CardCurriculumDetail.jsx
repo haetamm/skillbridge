@@ -14,9 +14,7 @@ const CardCurriculumDetail = ({ curricullums }) => {
             <p className="text-end text-[50px] font-bold lp:text-6xl lp:leading-[24px]">
               {id}
             </p>
-            <p className="font-semibold text-[18px] leading-[27px] my-7.5 lp:text-xl lp:leading-[30px] ">
-              {title}
-            </p>
+            <p className="font-semibold my-7.5 text-title-card">{title}</p>
 
             <div className="space-y-4">
               {details.map(({ title, duration, label }, index) => (
@@ -25,14 +23,18 @@ const CardCurriculumDetail = ({ curricullums }) => {
                   className="w-full p-6 rounded-md border-[1px] border-white-95 xs:flex xs:justify-between xs:items-center xs:gap-1.5 xl:p-4 lp:py-5 lp:px-6 lp:gap-1.5"
                 >
                   <div className="flex-1 min-w-0 mb-7.5 xs:mb-0 space-y-0.5">
-                    <p className="font-medium text-[16px] leading-6 lg:text-[16px] lg:leading-6">
+                    <p className="font-medium text-[16px] leading-6 dk:text-xl dk:leading-7.5">
                       {title}
                     </p>
-                    <p className="text-grey-35">{label}</p>
+                    <p className="text-grey-35 dk:text-lg dk:leading-[27px]">
+                      {label}
+                    </p>
                   </div>
                   <button className="flex gap-1 bg-white-95 items-center p-2.5 rounded-md justify-center flex-shrink-0 whitespace-nowrap">
                     <IoTimeOutline className="w-5 h-5" />
-                    <p className="lp:leading-[17px]">{duration}</p>
+                    <p className="lp:leading-[17px] dk:text-lg dk:leading-[22px]">
+                      {duration}
+                    </p>
                   </button>
                 </div>
               ))}

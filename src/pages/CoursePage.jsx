@@ -15,7 +15,6 @@ const CoursePage = () => {
           practical experience. Explore the courses below and find the perfect
           fit for your learning journey."
         />
-        <hr className="border[1px] border-white-90 " />
         <CardDetailCourse />
       </div>
     </>

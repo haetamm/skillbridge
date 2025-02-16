@@ -17,12 +17,8 @@ const CardBenefit = () => {
             </div>
 
             <div className="space-y-2.5 flex-grow dk:space-y-3.5">
-              <p className="font-semibold text-xl leading-[30px] lp:text-xl dk:text-2xl dk:leading-[36px]">
-                {title}
-              </p>
-              <p className="text-grey-30 lp:text-[16px] lp:leading-6 dk:text-[18px] dk:leading-[27px]">
-                {body}
-              </p>
+              <p className="font-semibold text-sub-title">{title}</p>
+              <p className="text-grey-30 text-body">{body}</p>
             </div>
 
             <div className="flex justify-end mt-auto">

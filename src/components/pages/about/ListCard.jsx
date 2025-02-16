@@ -17,12 +17,8 @@ const ListCard = ({ data }) => {
             />
           </div>
           <div className="space-y-1.5 lp:space-y-2.5 dk:space-y-3.5">
-            <p className="text-lg leading-[27px] font-medium lp:text-xl lp:leading-7.5 dk:text-[26px] dk:leading-9">
-              {title}
-            </p>
-            <p className="text-grey-35 lp:text-[16px] lp:leading-6 dk:text-lg dk:leading-[27px]">
-              {desc}
-            </p>
+            <p className="font-medium text-title-card">{title}</p>
+            <p className="text-grey-35 text-body">{desc}</p>
           </div>
         </div>
       ))}

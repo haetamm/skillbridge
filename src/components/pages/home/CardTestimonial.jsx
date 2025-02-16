@@ -9,9 +9,7 @@ const CardTestimonial = ({ img, user, desc }) => {
         className="bg-white rounded-[10px] flex flex-col items-center dk:rounded-xl"
       >
         <div className="p-7.5 gap-2.5 lp:p-10 dk:p-12.5">
-          <p className="lp:text-[16px] lp:leading-6 dk:text-[18px] dk:leading-[27px]">
-            {desc}
-          </p>
+          <p className="text-body">{desc}</p>
         </div>
         <div className="bg-white-99 w-full rounded-b-md py-5 px-7.5 lp:py-6 lp:px-10 dk:py-7.5 dk:px-12.5">
           <div className="w-full flex justify-between items-center gap-2 lp:ga-2.5">

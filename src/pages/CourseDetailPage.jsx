@@ -24,7 +24,6 @@ const CourseDetailPage = () => {
           classList="md:items-center"
           desc={desc}
         />
-        <hr className="border[1px] border-white-90 mb-12.5" />
         <div className="flex justify-center">
           <ImageCard url="ui-ux-vid.png" />
         </div>

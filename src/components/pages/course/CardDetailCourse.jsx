@@ -19,10 +19,10 @@ const CardDetailCourse = () => {
             <div className="w-full p-6 xl:p-10 lp:p-10 lp:gap-10 dk:p-12.5">
               <div className=" md:flex md:justify-between items-center space-y-3 md:space-y-0 gap-12.5 md:items-center ">
                 <div className="w-full  space-y-2  md:items-center xl:w-[1031px]">
-                  <p className="w-full font-semibold text-[18px] leading-[27px] md:text-[20px] md:leading-7.5">
+                  <p className="w-full font-semibold text-title-card">
                     {title}
                   </p>
-                  <p className="xl:text-[16px] leading-6">{preview}</p>
+                  <p className="text-body">{preview}</p>
                 </div>
                 <Link
                   to={`${urlPage.COURSE}/${slug}`}
@@ -65,7 +65,7 @@ const CardDetailCourse = () => {
                   {curricullums.map(({ id, title }, index) => (
                     <div
                       key={index}
-                      className={`lg:border-b-0  lg:w-[204px] lg:h-[120px] lg:px-3 lg:py-0 xl:w-[220px] xl:h-[120px] xl:py-0 lp:w-[220px] dk:min-w-[280px]
+                      className={`lg:border-b-0  lg:w-[204px] lg:h-[120px] lg:px-3 lg:py-0 xl:w-[220px] xl:h-[125px] xl:py-0 lp:w-[220px] dk:min-w-[280px]
                           ${
                             index === 0
                               ? "pb-6"
@@ -80,12 +80,10 @@ const CardDetailCourse = () => {
                           }
                       `}
                     >
-                      <p className="text-3xl font-extrabold leading-[45px] xl:text-[40px] dk:text-[50px] dk:leading-[75px]">
+                      <p className="font-extrabold text-3xl leading-[45px] lp:text-[40px] lp:leading-[60px] dk:text-[50px] dk:leading-[75px]">
                         {id}
                       </p>
-                      <p className="xl:text-[16px] xl:leading-[24px] dk:text-[18px] dk:leading-[27px]">
-                        {title}
-                      </p>
+                      <p className="text-body">{title}</p>
                     </div>
                   ))}
                 </div>

@@ -35,12 +35,8 @@ const CardCourses = () => {
                 </p>
               </div>
               <div className="w-full space-y-2.5 dk:space-y-3.5">
-                <p className="text-lg font-semibold leading-[27px] lp:text-xl lp:leading-7.5 dk:text-2xl dk:leading-[36px]">
-                  {title}
-                </p>
-                <p className="text-grey-30 lp:text-[16px] lp:leading-[24px] dk:text-lg dk:leading-[27px]">
-                  {desc}
-                </p>
+                <p className="font-semibold text-title-card">{title}</p>
+                <p className="text-grey-30 text-body">{desc}</p>
               </div>
               <button className="cursor-pointer w-full py-3.5 px-6 bg-white-97 rounded-md font-medium dk:py-4.5 dk:px-6 dk:rounded-lg dk:text-lg dk:leading-[27px]">
                 Get it Now

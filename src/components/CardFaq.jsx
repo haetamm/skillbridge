@@ -12,7 +12,7 @@ const CardFaq = () => {
               <p className="text-[28px] leading-[33px] lp:text-[38px] lp:leading-[45px] lp:font-semibold dk:text-5xl dk:leading-[57px]">
                 Frequently Asked Questions
               </p>
-              <p className="lp:text-[16px] lp:leading-6 dk:text-lg dk:leading-[27px]">
+              <p className="text-body">
                 Still you have any questions? Contact our Team via
                 support@skillbridge.com
               </p>

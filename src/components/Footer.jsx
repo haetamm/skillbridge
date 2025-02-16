@@ -6,9 +6,11 @@ import { contact, linksFooter, socialMedia } from "../utils/links";
 const LinkFooter = ({ title, links }) => {
   return (
     <div className="flex flex-col space-y-3">
-      <p className="text-[18px] font-semibold leading-[27px]">{title}</p>
+      <p className="font-semibold text-[18px] leading-[27px] dk:text-xl dk:leading-7.5">
+        {title}
+      </p>
       {links.map(({ to, label }, index) => (
-        <Link key={index} to={to} className="text-grey-35">
+        <Link key={index} to={to} className="text-grey-35 text-body">
           {label}
         </Link>
       ))}
@@ -38,7 +40,9 @@ const Footer = () => {
                 {contact.map(({ icon, label }, index) => (
                   <div key={index} className="flex gap-1.5 items-center">
                     {icon}
-                    <p className="text-[15px] leading-[22px]">{label}</p>
+                    <p className="text-[15px] leading-[22px] lp:text-[16px] lp:leading-6 dk:text-lg dk:leading-[27px]">
+                      {label}
+                    </p>
                   </div>
                 ))}
               </div>
@@ -49,7 +53,7 @@ const Footer = () => {
                 <LinkFooter title="About" links={linksFooter.slice(4, 8)} />
               </div>
               <div className="mt-8 space-y-3 lg:mt-0">
-                <p className="text-[18px] font-semibold leading-[27px]">
+                <p className="font-semibold text-[18px] leading-[27px] dk:text-xl dk:leading-7.5">
                   Social Profiles
                 </p>
                 <div className="flex gap-3.5">
@@ -67,7 +71,7 @@ const Footer = () => {
           </div>
 
           <hr className="my-6" />
-          <p className="text-center font-normal text-grey-40">
+          <p className="text-center font-normal text-grey-40 dk:text-lg dk:leading-[27px]">
             © 2023 Skillbridge. All rights reserved.
           </p>
         </div>

@@ -1,8 +1,11 @@
 import React, { useState } from "react";
 import { IoEyeSharp, IoEyeOffSharp } from "react-icons/io5";
 import PropTypes from "prop-types";
+import { useLocation } from "react-router-dom";
+import { urlPage } from "../../../utils/constans";
 
 const InputCustom = ({ label, type, placeholder }) => {
+  const { pathname } = useLocation();
   // Use state to manage whether the password is visible or not
   const [passwordVisible, setPasswordVisible] = useState(false);
 
@@ -12,10 +15,10 @@ const InputCustom = ({ label, type, placeholder }) => {
   };
 
   return (
-    <div className="space-y-2.5">
+    <div className="space-y-2.5 dk:space-y-3.5">
       <label
         htmlFor={placeholder}
-        className="block font-medium text-grey-15 lp:text-[16px] lp:leading-6 dk:text-lg dk:leading-[27px]"
+        className="block font-medium text-grey-15 text-body"
       >
         {label}
       </label>
@@ -41,6 +44,9 @@ const InputCustom = ({ label, type, placeholder }) => {
           </button>
         )}
       </div>
+      {pathname === urlPage.SIGNIN && type === "password" && (
+        <p className="text-grey-30 text-body text-end">Forgot Password?</p>
+      )}
     </div>
   );
 };

@@ -74,6 +74,26 @@ body {
     width: 100%;
 }
 
+.text-title {
+    font-size: 28px;
+    line-height: 42px;
+}
+
+.text-sub-title {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.text-title-card {
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.text-body {
+    font-size: 14px;
+    line-height: 21px;
+}
+
 @media (min-width: 1280px) {
     .kontener {
         max-width: 1120px;
@@ -84,10 +104,40 @@ body {
     .kontener {
         max-width: 1280px;
     }
+
+    .text-title {
+        font-size: 38px;
+        line-height: 57px;
+    }
+
+    .text-title-card {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    
+    .text-body {
+        font-size: 16px;
+        line-height: 24px;
+    }
 }
 
 @media (min-width: 1920px) {
     .kontener {
         max-width: 1595px;
+    }
+
+    .text-title {
+        font-size: 48px;
+        line-height: 72px;
+    }
+
+    .text-sub-title, .text-title-card {
+        font-size: 24px;
+        line-height: 36px;
+    }
+    
+    .text-body {
+        font-size: 18px;
+        line-height: 27px;
     }
 }

@@ -26,7 +26,7 @@ const InputCustom = ({ label, type, placeholder }) => {
         <input
           type={passwordVisible ? "text" : type}
           id={placeholder}
-          className="block w-full p-5 border border-white-95 rounded-lg h-[61px] lp:text-[16px] lp:leading-6 lp:placeholder:text-[16px] dk:text-lg dk:leading-[27px]"
+          className="block w-full p-5 border border-white-95 bg-white-99  focus:bg-white rounded-lg h-[61px] lp:text-[16px] lp:leading-6 lp:placeholder:text-[16px] dk:text-lg dk:leading-[27px]"
           placeholder={placeholder}
           required
         />

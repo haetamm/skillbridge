@@ -46,9 +46,9 @@ const CardPricing = () => {
                             }`}
                           >
                             {isFeatureIncluded ? (
-                              <IoCheckmark className="w-4 h-4" />
+                              <IoCheckmark className="w-4 h-4 text-grey-15 " />
                             ) : (
-                              <IoCloseOutline className="w-4 h-4" />
+                              <IoCloseOutline className="w-4 h-4 text-grey-15 " />
                             )}
                           </div>
                           <p className="text-grey-30 dk:text-lg dk:leading-[27px]">

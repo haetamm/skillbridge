@@ -17,8 +17,9 @@
     --orange-80: #FFD599;
     --primary-90: #FFEACC;
     --primary-95: #FFF4E5;
-    --primary-97: #FFF9F0;
+    --primary-97: #F7F7F8;
     --primary-99: #FFF9F0;
+    --white: #FFFFFF;
     --grey-15: #262626;
     --grey-30: #4C4C4D;
     --grey-35: #59595A;
@@ -27,6 +28,7 @@
     --background-color-95: #F1F1F3;
     --background-color-97: #F7F7F8;
     --background-color-99: #FCFCFD;
+    --shadow-custom: rgba(0, 0, 0, 0.2);
 }
 
 [data-theme='dark'] {
@@ -34,6 +36,13 @@
     --background-color-95: #262626;
     --background-color-97: #333333;
     --background-color-99: #4C4C4D;
+    --primary-95: #C25E00 ;
+    --grey-15: #FFFFFF;  
+    --grey-30: #D0D0D0; 
+    --grey-35: #C0C0C0;
+    --white:#000000;
+    --primary-90: #FFB366;
+    --shadow-custom: rgba(255, 153, 0, 0.2);
 }
 
 @theme {
@@ -49,6 +58,7 @@
     --color-primary-95: var(--primary-95);
     --color-primary-97: var(--primary-97);
     --color-primary-99: var(--primary-99);
+    --color-white: var(--white);
     --color-white-90: var(--background-color-90);
     --color-white-95: var(--background-color-95);
     --color-white-97: var(--background-color-97);
@@ -60,6 +70,7 @@
     --font-color-grey-40: var(--grey-40);
     --border-color-white-90: (var(--background-color-90));
     --border-color-white-95: (var(--background-color-95));
+    --shadow-custom: var(--shadow-custom);
 }
 
 body {
@@ -68,6 +79,7 @@ body {
     font-weight: 400;
     line-height: 21px;
     background-color: var(--background-color-90);
+    color: var(--grey-15);
 }
 
 .kontener {
@@ -92,6 +104,50 @@ body {
 .text-body {
     font-size: 14px;
     line-height: 21px;
+}
+
+.toggle {
+    position: fixed;
+    z-index: 50;
+    top: 14.5rem;
+    right: 1rem;
+    transform: translateY(-72px);
+    background-color: var(--orange-50);
+    color: var(--grey-15);
+    font-size: 1.125rem;
+    font-weight: 700;
+    border-radius: 9999px;
+    padding: .3rem;
+    outline: none;
+    transition: all .3sease-in-out;
+}
+
+.checkbox-custom {
+    appearance: none;
+    background-color: var(--primary-97);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border: 1px var(--primary-97)
+  }
+  
+  .checkbox-custom:checked {
+    background-color: var(--orange-50);
+    color: white;
+  }
+  
+  .checkbox-custom:checked::after {
+    content: '✓';
+    font-size: 0.875rem;
+    font-weight: bold;
+  }
+
+@media (min-width: 768px) {
+    .toggle {
+        top: 13rem;
+        right: 3rem;
+    }
 }
 
 @media (min-width: 1280px) {
@@ -141,3 +197,5 @@ body {
         line-height: 27px;
     }
 }
+
+

@@ -9,7 +9,7 @@ const CheckboxCustom = ({ children }) => {
           type="checkbox"
           id="terms"
           name="terms"
-          className="h-6 w-6 border-white-97 rounded-sm dk:h-7.5 dk:w-7.5"
+          className="flex-shrink-0 h-6 w-6 border-white-97 rounded-sm dk:h-7.5 dk:w-7.5 checkbox-custom "
           required
         />
         <label htmlFor="terms" className="block text-grey-40 text-body">

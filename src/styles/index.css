@@ -1,5 +1,11 @@
 @import 'tailwindcss';
 
+@font-face {
+    font-family: "CarmenSans";
+    src: url("/font/CarmenSans-Medium.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
 
 .no-scrollbar::-webkit-scrollbar {
     display: none;

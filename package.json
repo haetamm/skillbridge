@@ -7,7 +7,9 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "obfuscate": "node obfuscate.js",
+    "build:obfuscate": "npm run build && npm run obfuscate"
   },
   "dependencies": {
     "react": "^19.0.0",

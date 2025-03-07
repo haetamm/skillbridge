@@ -35,7 +35,7 @@ const Footer = () => {
         <div className=" kontener mx-auto">
           <div className="md:flex md:justify-between ">
             <div>
-              <img src="/img/Logo.png" alt="logo" className="w-10 h-10" />
+              <img src="/icon/Logo.png" alt="logo" className="w-10 h-10" />
               <div className="mt-8 space-y-3">
                 {contact.map(({ icon, label }, index) => (
                   <div key={index} className="flex gap-1.5 items-center">
